@@ -14,7 +14,12 @@ range(start, stop, step)
 #    print(i)#prints 5 to 9
 
 #print the sum of values btn 50 and 1000, step = 50.
+#break out of the loop when theSum is 6000
 theSum = 0
 for i in range(50,1001,50): 
     theSum+=i
+    if theSum == 6000:
+        break
 print(theSum)
+
+    
