@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 19 14:04:20 2019
+
+@author: Patrick
+"""
+#calculating the cuberoot using for loop
+cube = -27
+for guess in range(abs(cube)+1):
+    guess+=1
+    if guess**3 >= abs(cube):
+        break
+if guess**3 != abs(cube):
+    print("Not a perfect cube")
+else:
+    if cube < 0:
+        guess = -guess
+    print("the cuberoot of ", cube, "is", guess)
+        
